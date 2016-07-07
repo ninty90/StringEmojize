@@ -20,8 +20,9 @@ class ViewController: UIViewController {
     
     @IBAction func convertButton(sender: UIButton) {
         
-        var myString = textField.text
-        showLabel.text = myString.emojizedString()
+        if let myString = textField.text {
+            showLabel.text = myString.nty_emojized
+        }
     }
 }
 
